@@ -136,3 +136,8 @@ Adl  = 200
   to your input (verified against real 2016-NA `Field.txt`).
 - After splitting, make sure your `ServerInfo.txt` actually defines that many
   `Zone` services (ids `0..N-1`) and your stack runs them.
+
+## License
+
+[Apache License 2.0](LICENSE) — same as `fiesta-docker`. Permissive, with an
+explicit patent grant.
