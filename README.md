@@ -58,7 +58,7 @@ zone-balancer --field Field.txt --mobregen MobRegen/ [--zones N] [options]
 **Analysis only** (how many zones do I actually need?):
 
 ```bash
-zone-balancer --server-source /srv/ServerSource
+zone-balancer --server-source /srv/server-files
 ```
 
 ```
@@ -73,7 +73,7 @@ zone-balancer --server-source /srv/ServerSource
 **Pack into 4 zones**, treating the three starter towns as heavy, and write it:
 
 ```bash
-zone-balancer --server-source /srv/ServerSource --zones 4 \
+zone-balancer --server-source /srv/server-files --zones 4 \
   --weight Rou=300 --weight Eld=300 --weight Bera=200 \
   --out Field.balanced.txt
 ```
@@ -96,7 +96,7 @@ Without `--out` it's a dry run (reports only).
 
 | Option | Meaning |
 | --- | --- |
-| `--server-source DIR` | ServerSource root; derives `9Data/Shine/World/Field.txt` + `9Data/Shine/MobRegen/`. |
+| `--server-source DIR` | server files root; derives `9Data/Shine/World/Field.txt` + `9Data/Shine/MobRegen/`. |
 | `--field PATH` / `--mobregen DIR` | Point at the two inputs explicitly (override the derived paths). |
 | `--server-info PATH` | Optional `ServerInfo.txt`; cross-checks the target against the configured zone count. |
 | `--zones N` | Target zone count. Omit for analysis only. |
