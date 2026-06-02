@@ -1,4 +1,4 @@
-# fiesta-zone-balancer
+# ik-fiesta-zone-balancer
 
 A small .NET CLI that **auto-sizes the zones of a Fiesta Online server** from its
 own data files. It reads `Field.txt` (the map list) and the per-map mob-spawn
@@ -7,8 +7,8 @@ load as evenly as possible while respecting the engine's hard ceiling of
 **4096 mob spawn groups per zone**. It writes a new `Field.txt` with the trailing
 `Fiesta` (zone-id) column rewritten, leaving every other byte untouched.
 
-Companion to [fiesta-docker](https://github.com/IkaronClaude/fiesta-docker) /
-[fiesta-proxy](https://github.com/IkaronClaude/fiesta-proxy): once you've split
+Companion to [ik-fiesta-docker](https://github.com/IkaronClaude/ik-fiesta-docker) /
+[ik-fiesta-proxy](https://github.com/IkaronClaude/ik-fiesta-proxy): once you've split
 your maps across N zones, run N `Zone` services (the `Fiesta` column tells each
 Zone exe which maps to load).
 
@@ -139,5 +139,5 @@ Adl  = 200
 
 ## License
 
-[Apache License 2.0](LICENSE) — same as `fiesta-docker`. Permissive, with an
+[Apache License 2.0](LICENSE) — same as `ik-fiesta-docker`. Permissive, with an
 explicit patent grant.
